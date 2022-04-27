@@ -3,12 +3,10 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
-import {
-  CardStyleInterpolators,
-  createStackNavigator,
-} from "@react-navigation/stack";
+import { CardStyleInterpolators,createStackNavigator} from "@react-navigation/stack";
 import Signin from ".././src/screens/auth/Signin";
 import Registration from ".././src/screens/auth/Registration";
+import HomeAdapter from "./screens/HomeAdapter";
 const Main = createStackNavigator();
 const Onboard = createStackNavigator();
 const Auth = createStackNavigator();
@@ -42,6 +40,11 @@ function MainStack() {
           name="auth"
           options={{ headerShown: false }}
           component={AuthStack}
+        />
+        <Main.Screen
+          name="HomeAdapter"
+          options={{ headerShown: false }}
+          component={HomeAdapter}
         />
       </Main.Navigator>
     </NavigationContainer>
