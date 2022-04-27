@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "NT369",
+    "slug": "NT369",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "NT369"
+}
