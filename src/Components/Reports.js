@@ -6,7 +6,7 @@ import Header from './Header';
 const Reports = () =>{
  return(
      <View style={{flex:1}}>
-         <Header></Header>
+         <Header name={"Reports"}></Header>
          <View style={styles.container}>
            <Text>Reports Component</Text>
          </View>
@@ -18,7 +18,8 @@ const styles = StyleSheet.create({
    container :{
        flex:1,
        alignItems:'center',
-       justifyContent:'center'
+       justifyContent:'center',
+       backgroundColor:"#E9E9E8"
    }
 })
 
