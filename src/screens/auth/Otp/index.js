@@ -75,7 +75,7 @@ export default function Otp({ navigation }) {
         />
         <TouchableOpacity
           style={[styles.ResendContainer]}
-          onPress={() => ReSend()}
+          //   onPress={() => ReSend()}
         >
           <View style={{}}>
             <Text style={{ textAlign: "center" }}> Resend OTP </Text>
