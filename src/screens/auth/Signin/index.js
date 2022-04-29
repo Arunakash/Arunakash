@@ -28,8 +28,8 @@ export default function Signin({ navigation }) {
           // placeholderTextColor="grey"
           style={styles.input}
           // placeholder="Enter First Name"
-          value={password}
-          onChangeText={setPwd}
+          value={phoneNumber}
+          onChangeText={setNumber}
         />
         <TextInput
           // placeholderTextColor="grey"
