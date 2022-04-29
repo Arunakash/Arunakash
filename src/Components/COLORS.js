@@ -1,9 +1,9 @@
 const COLORS = {
-  primary: "#6093ea",
+  primary: "rgb(0, 122, 255)",
   blue: "#566AA3",
   placeholder: "#221F2A",
   h: "#202124",
-  dim: "#FAFAFA",
+  dim: "gray",
   fim: "#F5F5F5",
   btn: "#0A66C2",
   txt: "#444444",
