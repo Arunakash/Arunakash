@@ -2,10 +2,10 @@ import React,{Component} from 'react';
 import {View,Text,StyleSheet,ScrollView} from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import Header from './Header';
-const Home = () =>{
+const Home = (props) =>{
  return(
      <View style={{flex:1}}>
-         <Header name={"Dashboard"}></Header>
+         <Header name={"Dashboard"} navigation={props.navigation}></Header>
          <View style={styles.container}>
                  <ScrollView showsVerticalScrollIndicator={false} >
                      <View style={{paddingVertical:20}}>

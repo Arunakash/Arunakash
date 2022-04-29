@@ -1054,6 +1054,14 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     "to-fast-properties" "^2.0.0"
 
+"@callstack/react-theme-provider@^3.0.7":
+  "integrity" "sha512-Ab6rbD2w4u9W3yf7LQQ8evx9m8fZNsoWxt+MFm3AyZnyKQNCJf4K7ip9tHHZgSs+HTdoj38lEqPehvFOVQKvAg=="
+  "resolved" "https://registry.npmjs.org/@callstack/react-theme-provider/-/react-theme-provider-3.0.7.tgz"
+  "version" "3.0.7"
+  dependencies:
+    "deepmerge" "^3.2.0"
+    "hoist-non-react-statics" "^3.3.0"
+
 "@cnakazawa/watch@^1.0.3":
   "integrity" "sha512-v9kIhKwjeZThiWrLmj0y17CWoyddASLj9O2yvbZkbvw/N3rWOYy9zkV66ursAoVr0mV15bL8g0c4QZUE6cdDoQ=="
   "resolved" "https://registry.npmjs.org/@cnakazawa/watch/-/watch-1.0.4.tgz"
@@ -2251,7 +2259,7 @@
     "color-name" "^1.0.0"
     "simple-swizzle" "^0.2.2"
 
-"color@^3.1.3":
+"color@^3.1.2", "color@^3.1.3":
   "integrity" "sha512-aBl7dZI9ENN6fUGC7mWpMTPNHmWUSNan9tuWN6ahh5ZLNk9baLJOnSMlrQkHcrfFgz2/RigjUVAjdx36VcemKA=="
   "resolved" "https://registry.npmjs.org/color/-/color-3.2.1.tgz"
   "version" "3.2.1"
@@ -4736,10 +4744,19 @@
     "invariant" "^2.2.4"
     "prop-types" "^15.7.2"
 
-"react-native-iphone-x-helper@^1.3.0":
+"react-native-iphone-x-helper@^1.3.0", "react-native-iphone-x-helper@^1.3.1":
   "integrity" "sha512-HOf0jzRnq2/aFUcdCJ9w9JGzN3gdEg0zFE4FyYlp4jtidqU03D5X7ZegGKfT1EWteR0gPBGp9ye5T5FvSWi9Yg=="
   "resolved" "https://registry.npmjs.org/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz"
   "version" "1.3.1"
+
+"react-native-paper@^4.12.1":
+  "integrity" "sha512-xvAkwtRatsDcB/eSBUwoThBAT5Yy32SgKwrfHRUXi/9s5lR2SEuPZwmsZyAaq+bsxtAH1CaIT4CDeVLSaArzyg=="
+  "resolved" "https://registry.npmjs.org/react-native-paper/-/react-native-paper-4.12.1.tgz"
+  "version" "4.12.1"
+  dependencies:
+    "@callstack/react-theme-provider" "^3.0.7"
+    "color" "^3.1.2"
+    "react-native-iphone-x-helper" "^1.3.1"
 
 "react-native-reanimated@~2.1.0":
   "integrity" "sha512-tlPvvcdf+X7HGQ7g/7npBFhwMznfdk7MHUc9gUB/kp2abSscXNe/kOVKlrNEOO4DS11rNOXc+llFxVFMuNk0zA=="
@@ -4760,6 +4777,11 @@
   "integrity" "sha512-35II5oxTaVp3OP8y0eLPOPpQkxG4fRKQ+dL1YSE1we5kCZFOU0l/Rn0T79HbyUu1LPwUZr6lZupPs0ULnRyMuQ=="
   "resolved" "https://registry.npmjs.org/react-native-screens/-/react-native-screens-3.0.0.tgz"
   "version" "3.0.0"
+
+"react-native-sms-retriever@^1.1.1":
+  "integrity" "sha512-WRwiITfssx59+TB1iEMmjB7w4OTkatR34js5+4a4pP2jMXJ4aLdXK0hOtHxl8ciS8aIejdd49Sz8AXonlvtdRw=="
+  "resolved" "https://registry.npmjs.org/react-native-sms-retriever/-/react-native-sms-retriever-1.1.1.tgz"
+  "version" "1.1.1"
 
 "react-native-web@0.17.1":
   "integrity" "sha512-lUnn+2O8ynQ6/gJKylSxm7DLi2vHw6AujdDV1+LSa8Epe1bYFJNUcJTEhJf0jNYUFGOujzMtuG8Mkz3HdWTkag=="
