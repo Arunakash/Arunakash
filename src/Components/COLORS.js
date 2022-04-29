@@ -27,5 +27,8 @@ const COLORS = {
   bluee: "#4255CE",
   blue: "#264497",
   green: "#42CE5E",
+  sideDrawerBackgrndClr:"rgba(64,87,109,.07)",
+  sideDrawerIconClr:"#989fa7",
+  sideDrawerTxtClr:"#979797"
 };
 export default COLORS;
