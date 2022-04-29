@@ -69,7 +69,7 @@ export default function Signin({ navigation }) {
       <TouchableOpacity
         style={styles.SubmitBtn}
         onPress={() => {
-          navigation.replace("Home");
+          navigation.replace("DrawerRoot");
         }}
       >
         <Text style={styles.submitText}>Signin</Text>

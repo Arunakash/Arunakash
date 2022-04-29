@@ -65,11 +65,11 @@ function MainStack() {
   return (
     <NavigationContainer>
       <Main.Navigator initialRouteName={"auth"}>
-        {/* <Main.Screen
+        <Main.Screen
           name="auth"
           options={{ headerShown: false }}
           component={AuthStack}
-        /> */}
+        />
         <Main.Screen
           name="DrawerRoot"
           options={{ headerShown: false }}
