@@ -7,12 +7,17 @@ import {
   CardStyleInterpolators,
   createStackNavigator,
 } from "@react-navigation/stack";
+import { createDrawerNavigator } from "@react-navigation/drawer";
 import Signin from ".././src/screens/auth/Signin";
 import Registration from ".././src/screens/auth/Registration";
 import HomeAdapter from "./screens/HomeAdapter";
+import SideDrawer from "./Components/SideDrawerContent";
+
 const Main = createStackNavigator();
-const Onboard = createStackNavigator();
+// const Onboard = createStackNavigator();
 const Auth = createStackNavigator();
+const Drawer = createDrawerNavigator();
+
 function AuthStack() {
   return (
     <Auth.Navigator
@@ -35,19 +40,40 @@ function AuthStack() {
     </Auth.Navigator>
   );
 }
+
+const DrawerContainer = () => {
+  return (
+    <Main.Navigator screenOptions={{ headerShown: false }}>
+      <Main.Screen name="HomeAdapter" component={HomeAdapter} />
+    </Main.Navigator>
+  );
+};
+
+const DrawerRoot = () => {
+  return (
+    <Drawer.Navigator
+      initialRouteName={"DrawerContainer"}
+      screenOptions={{ headerShown: false }}
+      drawerContent={(props) => <SideDrawer {...props} />}
+    >
+      <Drawer.Screen name="DrawerContainer" component={DrawerContainer} />
+    </Drawer.Navigator>
+  );
+};
+
 function MainStack() {
   return (
     <NavigationContainer>
       <Main.Navigator initialRouteName={"auth"}>
-        <Main.Screen
+        {/* <Main.Screen
           name="auth"
           options={{ headerShown: false }}
           component={AuthStack}
-        />
+        /> */}
         <Main.Screen
-          name="Home"
+          name="DrawerRoot"
           options={{ headerShown: false }}
-          component={HomeAdapter}
+          component={DrawerRoot}
         />
       </Main.Navigator>
     </NavigationContainer>

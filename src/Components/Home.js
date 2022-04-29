@@ -1,13 +1,25 @@
 import React,{Component} from 'react'; 
-import {View,Text,StyleSheet} from 'react-native';
+import {View,Text,StyleSheet,ScrollView} from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import Header from './Header';
 const Home = () =>{
  return(
      <View style={{flex:1}}>
-         <Header></Header>
+         <Header name={"Dashboard"}></Header>
          <View style={styles.container}>
-           <Text>Home Component</Text>
+                 <ScrollView showsVerticalScrollIndicator={false} >
+                     <View style={{paddingVertical:20}}>
+                         <View style={styles.listView}></View>
+                         <View style={styles.listView}></View>
+                         <View style={styles.listView}></View>
+                         <View style={styles.listView}></View>
+                         <View style={styles.listView}></View>
+                         <View style={styles.listView}></View>
+                         <View style={styles.listView}></View>
+                         <View style={styles.listView}></View>
+                         <View style={styles.listView}></View>
+                     </View>
+                </ScrollView>
          </View>
      </View>
  )
@@ -16,8 +28,16 @@ const Home = () =>{
 const styles = StyleSheet.create({
    container :{
        flex:1,
-       alignItems:'center',
-       justifyContent:'center'
+       backgroundColor:"#E9E9E8"
+   },
+   listView:{
+    backgroundColor:"#fff",
+    height:78,
+    borderRadius:10,
+    marginHorizontal:10,
+    marginVertical:5,
+    zIndex:1000,
+    elevation:4
    }
 })
 

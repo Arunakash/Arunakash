@@ -3,7 +3,7 @@ import React,{Component} from 'react';
 import {View,Text,StyleSheet} from 'react-native';
 import { Ionicons, MaterialCommunityIcons} from '@expo/vector-icons';
 
-const Header = () =>{
+const Header = (props) =>{
     return(
         <View style={styles.container}>
          <StatusBar StatusBarStyle = "dark-content"/>
@@ -11,15 +11,15 @@ const Header = () =>{
             <View style={{flex:1.4}} flexDirection='row' >
                 <View style={{flex:1,alignItems:'center',justifyContent:'center'}}>
                     <View style={{flexDirection:'row'}}>
-                    <Ionicons name="menu" size={27} color="black" />
+                    <Ionicons name="menu" size={30} color="black" />
                 
                 </View>
                 </View>
                 <View style={{flex:4,alignItems:'center',justifyContent:'center'}}>
-                    <Text style={{fontSize:17,fontWeight:'bold'}}>Products</Text>
+                    <Text style={{fontSize:17,fontWeight:'bold'}}>{props.name}</Text>
                 </View>
                 <View style={{flex:1,alignItems:'center',justifyContent:'center'}}>
-                <MaterialCommunityIcons name="bell" size={24} color="black" />
+                <MaterialCommunityIcons name="bell" size={20} color="rgb(0, 122, 255)" />
                 </View>
             </View>
         </View>
@@ -29,7 +29,8 @@ const Header = () =>{
 const styles = StyleSheet.create({
     container:{
         height:100,
-        backgroundColor:"#D3D3D3",
+        backgroundColor:"#fff",
+        // backgroundColor:"#D3D3D3",
         flexDirection:'column',
     }
 })

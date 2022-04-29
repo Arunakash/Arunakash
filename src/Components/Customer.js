@@ -6,7 +6,7 @@ import Header from './Header';
 const Customer = () =>{
  return(
      <View style={{flex:1}}>
-         <Header></Header>
+         <Header name={"Customer"}></Header>
          <View style={styles.container}>
            <Text>Customer Component</Text>
          </View>
@@ -18,7 +18,8 @@ const styles = StyleSheet.create({
    container :{
        flex:1,
        alignItems:'center',
-       justifyContent:'center'
+       justifyContent:'center',
+       backgroundColor:"#E9E9E8"
    }
 })
 

@@ -19,7 +19,6 @@ const HomeAdapter = () => {
   return (
     <Tab.Navigator
       screenOptions={{ headerShown: false }}
-      lazy={false}
       initialRouteName={"Home"}
       shifting={false}
       activeColor="#031969"
@@ -32,7 +31,7 @@ const HomeAdapter = () => {
         options={{
           tabBarLabel: "Home",
           tabBarIcon: ({ color }) => (
-            <Foundation name="home" size={24} color="#203761" />
+            <Foundation name="home" size={24} color={color} />
           ),
         }}
       />
@@ -42,7 +41,7 @@ const HomeAdapter = () => {
         options={{
           tabBarLabel: "customer",
           tabBarIcon: ({ color }) => (
-            <FontAwesome name="user-circle-o" size={24} color="#203761" />
+            <FontAwesome name="user-circle-o" size={24} color={color} />
           ),
         }}
       />
@@ -52,7 +51,7 @@ const HomeAdapter = () => {
         options={{
           tabBarLabel: "Billings",
           tabBarIcon: ({ color }) => (
-            <AntDesign name="creditcard" size={24} color="#203761" />
+            <AntDesign name="creditcard" size={24} color={color} />
           ),
         }}
       />
@@ -62,7 +61,7 @@ const HomeAdapter = () => {
         options={{
           tabBarLabel: "Expenses",
           tabBarIcon: ({ color }) => (
-            <FontAwesome5 name="money-bill-wave" size={23} color="#203761" />
+            <FontAwesome5 name="money-bill-wave" size={23} color={color} />
           ),
         }}
       />
@@ -72,7 +71,7 @@ const HomeAdapter = () => {
         options={{
           tabBarLabel: "Reports",
           tabBarIcon: ({ color }) => (
-            <Octicons name="report" size={24} color="#203761" />
+            <Octicons name="report" size={24} color={color} />
           ),
         }}
       />
