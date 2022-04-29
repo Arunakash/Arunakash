@@ -1,9 +1,10 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useEffect, useState } from "react";
-import { StyleSheet, Text, View, TextInput } from "react-native";
+import { StyleSheet, Text, View, TextInput, Image } from "react-native";
 import SmsRetriever from "react-native-sms-retriever";
 import COLORS from "../../../Components/COLORS.js";
 import { RadioButton } from "react-native-paper";
+import Images from "../../../Assets/constants.js";
 import { TouchableOpacity } from "react-native-gesture-handler";
 export default function Signin({ navigation }) {
   const [phoneNumber, setNumber] = useState("");
@@ -22,19 +23,21 @@ export default function Signin({ navigation }) {
   };
   return (
     <View style={styles.container}>
-      <View></View>
       <View style={styles.SubContainer}>
+        <View>
+          <Image source={Images.Logo1} style={styles.logo} />
+        </View>
         <TextInput
-          // placeholderTextColor="grey"
+          placeholderTextColor="grey"
           style={styles.input}
-          // placeholder="Enter First Name"
+          placeholder="Phone Number"
           value={phoneNumber}
           onChangeText={setNumber}
         />
         <TextInput
-          // placeholderTextColor="grey"
+          placeholderTextColor="grey"
           style={styles.input}
-          // placeholder="Enter First Name"
+          placeholder="Password"
           value={password}
           onChangeText={setPwd}
         />
@@ -75,7 +78,7 @@ export default function Signin({ navigation }) {
         <Text style={styles.submitText}>Signin</Text>
       </TouchableOpacity>
       <TouchableOpacity style={{ alignItems: "center", marginVertical: 30 }}>
-        <Text>Forgot Password</Text>
+        <Text style={{ color: "#000", fontSize: 16 }}>Forgot Password</Text>
       </TouchableOpacity>
       <View
         style={{
@@ -107,7 +110,7 @@ const styles = StyleSheet.create({
   },
   SubContainer: {
     alignItems: "center",
-    marginTop: 200,
+    marginTop: 50,
   },
   btn: {
     width: "90%",
@@ -115,6 +118,12 @@ const styles = StyleSheet.create({
     borderColor: COLORS.primary,
     borderWidth: 1,
     borderRadius: 10,
+    marginBottom: 20,
+  },
+  logo: {
+    // resizeMode: 'contain',
+    width: 250,
+    height: 250,
     marginBottom: 20,
   },
   phoneNo: {

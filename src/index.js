@@ -10,6 +10,7 @@ import {
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import Signin from ".././src/screens/auth/Signin";
 import Registration from ".././src/screens/auth/Registration";
+import Otp from "./screens/auth/Otp";
 import HomeAdapter from "./screens/HomeAdapter";
 import SideDrawer from "./Components/SideDrawerContent";
 
@@ -36,6 +37,11 @@ function AuthStack() {
         name="registartion"
         options={{ headerShown: false }}
         component={Registration}
+      />
+      <Auth.Screen
+        name="otp"
+        options={{ headerShown: false }}
+        component={Otp}
       />
     </Auth.Navigator>
   );
