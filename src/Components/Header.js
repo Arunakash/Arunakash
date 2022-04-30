@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import { DrawerActions } from "@react-navigation/native";
+import COLORS from "./COLORS";
 
 const Header = (props) => {
   return (
@@ -35,7 +36,7 @@ const Header = (props) => {
           <MaterialCommunityIcons
             name="bell"
             size={20}
-            color="rgb(0, 122, 255)"
+            color={COLORS.primary}
           />
         </View>
       </View>

@@ -2,10 +2,10 @@ import React,{Component} from 'react';
 import {View,Text,StyleSheet} from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import Header from './Header';
-const Billings = () =>{
+const Billings = (props) =>{
  return(
      <View style={{flex:1}}>
-         <Header name={"Billings"}></Header>
+         <Header name={"Billings"} navigation={props.navigation}></Header>
          <View style={styles.container}>
            <Text>Billings Component</Text>
          </View>

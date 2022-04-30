@@ -3,10 +3,10 @@ import {View,Text,StyleSheet} from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import Header from './Header';
 
-const Customer = () =>{
+const Customer = (props) =>{
  return(
      <View style={{flex:1}}>
-         <Header name={"Customer"}></Header>
+         <Header name={"Customer"} navigation={props.navigation}></Header>
          <View style={styles.container}>
            <Text>Customer Component</Text>
          </View>

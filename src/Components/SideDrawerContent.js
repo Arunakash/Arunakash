@@ -15,7 +15,7 @@ const SideDrawer = () =>{
                   <Text style={styles.sideDrawerHdng}>NT369 Supply</Text>
              </View>
              <View style={styles.sideDrawerProfileInfo}>
-             <Ionicons name="person-circle" size={30} color="rgb(0, 122, 255)" style={{paddingRight:6}}/>
+             <Ionicons name="person-circle" size={30} color={COLORS.primary} style={{paddingRight:6}}/>
               <Text style={{fontSize:16}}>+91 93244793232</Text>
             </View>
            </View>
@@ -210,7 +210,7 @@ const SideDrawer = () =>{
       justifyContent:'center'
     },
     sideDrawerHdng:{
-      color:"rgb(0, 122, 255)",
+      color:COLORS.primary,
       fontSize:18,
       fontWeight:'bold'
     },

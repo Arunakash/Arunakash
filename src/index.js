@@ -13,6 +13,16 @@ import Registration from ".././src/screens/auth/Registration";
 import Otp from "./screens/auth/Otp";
 import HomeAdapter from "./screens/HomeAdapter";
 import SideDrawer from "./Components/SideDrawerContent";
+import EmptyCanRprt from './screens/EmptyCanReport';
+import AdvanceRprt from "./screens/AdvanceReport";
+import CustomerViceRprt from "./screens/CustomerViceRprt";
+import DamagesRprt from "./screens/DamagesReport";
+import GstReport from "./screens/GstReport";
+import PaymentReport from "./screens/PaymentReport";
+import SalesReport from "./screens/SalesReport";
+import StoreHistoryRprt from "./screens/StoreHistoryRprt";
+import VendorRprt from "./screens/VendorReport";
+
 
 const Main = createStackNavigator();
 // const Onboard = createStackNavigator();
@@ -51,6 +61,15 @@ const DrawerContainer = () => {
   return (
     <Main.Navigator screenOptions={{ headerShown: false }}>
       <Main.Screen name="HomeAdapter" component={HomeAdapter} />
+      <Main.Screen name="EmptyCanRprt" component={EmptyCanRprt} />
+      <Main.Screen name="DamagesRprt" component={DamagesRprt} />
+      <Main.Screen name="GstReport" component={GstReport} />
+      <Main.Screen name="CustomerViceRprt" component={CustomerViceRprt} />
+      <Main.Screen name="VendorRprt" component={VendorRprt} />
+      <Main.Screen name="AdvanceRprt" component={AdvanceRprt} />
+      <Main.Screen name="StoreHistoryRprt" component={StoreHistoryRprt} />
+      <Main.Screen name="SalesReport" component={SalesReport} />
+      <Main.Screen name="PaymentReport" component={PaymentReport} />
     </Main.Navigator>
   );
 };

@@ -1,5 +1,6 @@
 const COLORS = {
-  primary: "rgb(0, 122, 255)",
+  // primary: "rgb(0, 122, 255)",
+  primary:"#318ce7",
   blue: "#566AA3",
   placeholder: "#221F2A",
   h: "#202124",

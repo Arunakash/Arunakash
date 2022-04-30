@@ -90,7 +90,7 @@ export default function Signin({ navigation }) {
         <Text style={{ fontSize: 16 }}>Don't have an account? </Text>
         <TouchableOpacity
           onPress={() => {
-            navigation.replace("registartion");
+            navigation.navigate("registartion");
           }}
         >
           <Text style={{ fontSize: 16, color: COLORS.primary }}>Signup</Text>

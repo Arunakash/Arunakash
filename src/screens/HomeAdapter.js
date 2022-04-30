@@ -5,14 +5,9 @@ import Billngs from "../Components/Billing";
 import Customer from "../Components/Customer";
 import Expenses from "../Components/Expenses";
 import Reports from "../Components/Reports";
-import {
-  FontAwesome,
-  Foundation,
-  AntDesign,
-  FontAwesome5,
-  Octicons,
-} from "@expo/vector-icons";
+import {FontAwesome,Foundation,AntDesign,FontAwesome5,Octicons} from "@expo/vector-icons";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import COLORS from '../Components/COLORS'
 
 const Tab = createBottomTabNavigator();
 const HomeAdapter = () => {
@@ -21,7 +16,6 @@ const HomeAdapter = () => {
       screenOptions={{ headerShown: false }}
       initialRouteName={"Home"}
       shifting={false}
-      activeColor="#031969"
       labeled={true}
       barStyle={{ backgroundColor: "white" }}
     >
@@ -30,6 +24,7 @@ const HomeAdapter = () => {
         component={Home}
         options={{
           tabBarLabel: "Home",
+          tabBarActiveTintColor:COLORS.primary,
           tabBarIcon: ({ color }) => (
             <Foundation name="home" size={24} color={color} />
           ),
@@ -40,6 +35,7 @@ const HomeAdapter = () => {
         component={Customer}
         options={{
           tabBarLabel: "customer",
+          tabBarActiveTintColor:COLORS.primary,
           tabBarIcon: ({ color }) => (
             <FontAwesome name="user-circle-o" size={24} color={color} />
           ),
@@ -50,6 +46,7 @@ const HomeAdapter = () => {
         component={Billngs}
         options={{
           tabBarLabel: "Billings",
+          tabBarActiveTintColor:COLORS.primary,
           tabBarIcon: ({ color }) => (
             <AntDesign name="creditcard" size={24} color={color} />
           ),
@@ -60,6 +57,7 @@ const HomeAdapter = () => {
         component={Expenses}
         options={{
           tabBarLabel: "Expenses",
+          tabBarActiveTintColor:COLORS.primary,
           tabBarIcon: ({ color }) => (
             <FontAwesome5 name="money-bill-wave" size={23} color={color} />
           ),
@@ -70,6 +68,7 @@ const HomeAdapter = () => {
         component={Reports}
         options={{
           tabBarLabel: "Reports",
+          tabBarActiveTintColor:COLORS.primary,
           tabBarIcon: ({ color }) => (
             <Octicons name="report" size={24} color={color} />
           ),
