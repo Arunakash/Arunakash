@@ -68,11 +68,11 @@ const Reports = (props) =>{
 
          
                  <View style={styles.listView}>
-                   <TouchableRipple onPress={() =>{props.navigation.navigate("CustomerViceRprt")}} borderless={true} style={{borderRadius:10}}>
+                   <TouchableRipple onPress={() =>{props.navigation.navigate("CustomerWiseRprt")}} borderless={true} style={{borderRadius:10}}>
                       <View style={{borderRadius:10,paddingVertical:8}}>
                          <View style={{ flexDirection: "row", paddingHorizontal: 25,alignItems:'center'}}>
                            <View style={{flex:3}}>
-                             <Text style={styles.listViewTxt}>Customer Vise Report</Text>
+                             <Text style={styles.listViewTxt}>Customer Wise Report</Text>
                          </View>
 
                           <View style={{flex:1,alignItems:'flex-end',justifyContent:'center'}}>

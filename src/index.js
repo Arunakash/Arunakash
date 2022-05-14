@@ -15,7 +15,7 @@ import HomeAdapter from "./screens/HomeAdapter";
 import SideDrawer from "./Components/SideDrawerContent";
 import EmptyCanRprt from './screens/EmptyCanReport';
 import AdvanceRprt from "./screens/AdvanceReport";
-import CustomerViceRprt from "./screens/CustomerViceRprt";
+import CustomerWiseRprt from "./screens/CustomerWiseRprt";
 import DamagesRprt from "./screens/DamagesReport";
 import GstReport from "./screens/GstReport";
 import PaymentReport from "./screens/PaymentReport";
@@ -64,7 +64,7 @@ const DrawerContainer = () => {
       <Main.Screen name="EmptyCanRprt" component={EmptyCanRprt} />
       <Main.Screen name="DamagesRprt" component={DamagesRprt} />
       <Main.Screen name="GstReport" component={GstReport} />
-      <Main.Screen name="CustomerViceRprt" component={CustomerViceRprt} />
+      <Main.Screen name="CustomerWiseRprt" component={CustomerWiseRprt} />
       <Main.Screen name="VendorRprt" component={VendorRprt} />
       <Main.Screen name="AdvanceRprt" component={AdvanceRprt} />
       <Main.Screen name="StoreHistoryRprt" component={StoreHistoryRprt} />

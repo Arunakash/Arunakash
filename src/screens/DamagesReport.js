@@ -43,10 +43,10 @@ const DamagesRprt = (props) =>{
             <View style={{paddingTop:20}}>
                   <View style={{flexDirection:'row',justifyContent:'space-between',paddingHorizontal:10}}>
                      <View style={styles.dateTxtHldr}>
-                         <Text>From: 20 Apr, 2020</Text>
+                         <Text><Text style={{color:COLORS.primary}}>From:</Text> 20 Apr, 2020</Text>
                      </View>
                      <View style={styles.dateTxtHldr}>
-                         <Text>To: 30 Apr, 2020</Text>
+                         <Text><Text style={{color:COLORS.primary}}>To:</Text> 30 Apr, 2020</Text>
                      </View>
                   </View>
                   <View style={[{backgroundColor:'#fff',height:40,marginHorizontal:20,marginVertical:20,borderRadius:26,flexDirection:'row',alignItems:'center'},isSearchBarFocused?{borderColor:COLORS.primary,borderWidth:2}:""]}>
