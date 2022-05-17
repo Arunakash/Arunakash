@@ -1,10 +1,10 @@
 import React,{Component} from 'react';
-import {View,Text,StyleSheet,FlatList,ScrollView,TextInput} from 'react-native';
+import {View,Text,StyleSheet,FlatList,ScrollView} from 'react-native';
 import ReportScrnsHeader from '../Components/ReportScrnsHeader';
-import {Entypo,Ionicons,FontAwesome} from '@expo/vector-icons';
+import {Entypo} from '@expo/vector-icons';
 import COLORS from '../Components/COLORS';
 
-const VendorRprt = (props) =>{
+const CustomerWiseRprt = (props) =>{
 
     const listData = [{name:"200",count:200},{name:"300",count:100},{name:"300",count:150}]
     const billInvoiceData = [{billNo:"SVP1",billDate:"20-11-22",totalAmt:"100",balance:"0"},
@@ -29,7 +29,6 @@ const VendorRprt = (props) =>{
         </View>
         )
     }
-
 
     const inVoiceRenderItem = ({item,index}) =>{
         return(
@@ -58,9 +57,10 @@ const VendorRprt = (props) =>{
         )
     }
 
+
     return(
         <View style={{flex:1}}>
-        <ReportScrnsHeader name= {"Vendor Wise Report"} navigation={props.navigation}></ReportScrnsHeader>
+        <ReportScrnsHeader name= {"Customer Wise Report"} navigation={props.navigation}></ReportScrnsHeader>
         <View style={{flex:1}}>
             <View style={{paddingTop:20}}>
             <View style={{flexDirection:'row',justifyContent:'space-between',paddingHorizontal:10}}>
@@ -71,15 +71,10 @@ const VendorRprt = (props) =>{
                          <Text><Text style={{color:COLORS.primary}}>To:</Text> 30 Apr, 2020</Text>
                      </View>
             </View>
-
-            <View style={{flexDirection:'row',alignItems:'center',paddingHorizontal:10,paddingVertical:20}}>
-                <Text style={{paddingRight:13,fontSize:13,color:COLORS.primary,fontWeight:'bold'}}>Vendor Name:</Text>
-            <View style={[{backgroundColor:'#fff',flex:1,height:35,borderRadius:26,flexDirection:'row',alignItems:'center'}]}>
-                      <Ionicons name="ios-search" size={20} color={COLORS.sideDrawerIconClr} style={{paddingLeft:15}}/>
-                      <TextInput placeholder='Search by Name'   style={{borderRightColor:COLORS.sideDrawerIconClr,borderRightWidth:1,flex:1,padding:0,paddingLeft:10}}></TextInput>
-                      <FontAwesome name="filter" size={18} color={COLORS.sideDrawerIconClr} style={{paddingRight:15,paddingLeft:10}}/>
-             </View>
-             </View>
+            <View style={{flexDirection:'row',paddingTop:20,paddingBottom:20,justifyContent:'center',alignItems:'center'}}>
+             <Text style={{fontSize:13,fontWeight:'bold',color:COLORS.primary}}>Customer Name</Text>
+             <View style={{width:150,marginLeft:10,backgroundColor:'#fff',height:30,borderRadius:4,justifyContent:'center'}}></View>
+            </View>
          <ScrollView contentContainerStyle={{paddingBottom:150}}>
                  <View name="table-body" style={{paddingHorizontal:10}}>
                      <View name={"Header-row"} style={{paddingVertical:15,flexDirection:'row',backgroundColor:"#E1ECF4"}}>
@@ -120,6 +115,7 @@ const VendorRprt = (props) =>{
     )
 }
 
+
 const styles = StyleSheet.create({
     dateTxtHldr:{
         backgroundColor:'#fff',
@@ -131,4 +127,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default VendorRprt;
+export default CustomerWiseRprt;

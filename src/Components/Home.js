@@ -5,6 +5,18 @@ import COLORS from "./COLORS";
 import Header from "./Header";
 
 const Home = (props) => {
+  //  React.useEffect(() => {
+  //   const unsubscribe = props.navigation.addListener('tabPress', (e) => {
+  //     // Prevent default behavior
+  //     e.preventDefault();
+  //     console.log("kjdkjdkdjk")
+  //     alert('Default behavior prevented');
+  //     // Do something manually
+  //     // ...
+  //   });
+
+  //   return unsubscribe;
+  // }, [props.navigation])
   return (
     <View style={{ flex: 1 }}>
       <Header name={"Dashboard"} navigation={props.navigation}></Header>
