@@ -13,7 +13,7 @@ import Registration from ".././src/screens/auth/Registration";
 import Otp from "./screens/auth/Otp";
 import HomeAdapter from "./screens/HomeAdapter";
 import SideDrawer from "./Components/SideDrawerContent";
-import EmptyCanRprt from './screens/EmptyCanReport';
+import EmptyCanRprt from "./screens/EmptyCanReport";
 import AdvanceRprt from "./screens/AdvanceReport";
 import CustomerViceRprt from "./screens/CustomerViceRprt";
 import DamagesRprt from "./screens/DamagesReport";
@@ -22,8 +22,7 @@ import PaymentReport from "./screens/PaymentReport";
 import SalesReport from "./screens/SalesReport";
 import StoreHistoryRprt from "./screens/StoreHistoryRprt";
 import VendorRprt from "./screens/VendorReport";
-
-
+import MyAccount from "./screens/SideDrawer/MyAccount";
 const Main = createStackNavigator();
 // const Onboard = createStackNavigator();
 const Auth = createStackNavigator();
@@ -70,6 +69,7 @@ const DrawerContainer = () => {
       <Main.Screen name="StoreHistoryRprt" component={StoreHistoryRprt} />
       <Main.Screen name="SalesReport" component={SalesReport} />
       <Main.Screen name="PaymentReport" component={PaymentReport} />
+      <Main.Screen name="MyAccount" component={MyAccount} />
     </Main.Navigator>
   );
 };
