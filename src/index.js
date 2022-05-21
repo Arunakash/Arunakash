@@ -23,6 +23,12 @@ import SalesReport from "./screens/SalesReport";
 import StoreHistoryRprt from "./screens/StoreHistoryRprt";
 import VendorRprt from "./screens/VendorReport";
 import MyAccount from "./screens/SideDrawer/MyAccount";
+import LoginDetails from "./screens/SideDrawer/LoginDetails";
+import EmployeeDetails from "./screens/SideDrawer/EmployeeDetails";
+import CreateEmployee from "./screens/SideDrawer/CreateEmployee";
+import Gst from "./screens/SideDrawer/Gst";
+import Product from "./screens/SideDrawer/Product";
+import TermsCondition from "./screens/SideDrawer/Terms&condition";
 const Main = createStackNavigator();
 // const Onboard = createStackNavigator();
 const Auth = createStackNavigator();
@@ -70,6 +76,12 @@ const DrawerContainer = () => {
       <Main.Screen name="SalesReport" component={SalesReport} />
       <Main.Screen name="PaymentReport" component={PaymentReport} />
       <Main.Screen name="MyAccount" component={MyAccount} />
+      <Main.Screen name="LoginDetails" component={LoginDetails} />
+      <Main.Screen name="EmployeeDetails" component={EmployeeDetails} />
+      <Main.Screen name="CreateEmployee" component={CreateEmployee} />
+      <Main.Screen name="Gst" component={Gst} />
+      <Main.Screen name="Product" component={Product} />
+      <Main.Screen name="TermsCondition" component={TermsCondition} />
     </Main.Navigator>
   );
 };

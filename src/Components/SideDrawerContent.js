@@ -81,7 +81,7 @@ const SideDrawer = ({ navigation }) => {
 
             <TouchableRipple
               onPress={() => {
-                console.log("");
+                navigation.navigate("LoginDetails");
               }}
             >
               <View style={{ flexDirection: "row", paddingVertical: 15 }}>
@@ -116,7 +116,7 @@ const SideDrawer = ({ navigation }) => {
 
             <TouchableRipple
               onPress={() => {
-                console.log("");
+                navigation.navigate("EmployeeDetails");
               }}
             >
               <View style={{ flexDirection: "row", paddingVertical: 15 }}>
@@ -198,7 +198,7 @@ const SideDrawer = ({ navigation }) => {
 
             <TouchableRipple
               onPress={() => {
-                console.log("");
+                navigation.navigate("Gst");
               }}
             >
               <View style={{ flexDirection: "row", paddingVertical: 15 }}>
@@ -419,7 +419,7 @@ const SideDrawer = ({ navigation }) => {
 
               <TouchableRipple
                 onPress={() => {
-                  console.log("");
+                  navigation.navigate("TermsCondition");
                 }}
               >
                 <View style={{ flexDirection: "row", paddingVertical: 15 }}>
@@ -454,7 +454,7 @@ const SideDrawer = ({ navigation }) => {
 
               <TouchableRipple
                 onPress={() => {
-                  console.log("");
+                  navigation.navigate("Product");
                 }}
               >
                 <View style={{ flexDirection: "row", paddingVertical: 15 }}>
