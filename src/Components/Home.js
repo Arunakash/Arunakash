@@ -122,6 +122,20 @@ const Home = (props) => {
               </View>
             </View>
 
+            <View style={styles.listView}>
+              <View style={{ flexDirection: "row", paddingHorizontal: 25,alignItems:'center'}}>
+                <View style={{flex:2}}>
+                  <Text style={styles.listViewTxt}>Customer Advance</Text>
+                </View>
+
+                <View style={{flex:1,alignItems:'center',justifyContent:'center'}}>
+                  <View style={styles.textBtn}>
+                    <Text style={styles.valueTxt}>220</Text>
+                  </View>
+                </View>
+              </View>
+            </View>
+
      
           </View>
         </ScrollView>

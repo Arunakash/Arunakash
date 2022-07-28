@@ -29,6 +29,9 @@ import CreateEmployee from "./screens/SideDrawer/CreateEmployee";
 import Gst from "./screens/SideDrawer/Gst";
 import Product from "./screens/SideDrawer/Product";
 import TermsCondition from "./screens/SideDrawer/Terms&condition";
+import EditCustomerData from "./screens/EditCustomerData";
+
+
 const Main = createStackNavigator();
 // const Onboard = createStackNavigator();
 const Auth = createStackNavigator();
@@ -112,6 +115,7 @@ function MainStack() {
           options={{ headerShown: false }}
           component={DrawerRoot}
         />
+        <Main.Screen name="EditCustomerData"  options={{ headerShown: false }} component={EditCustomerData}/>
       </Main.Navigator>
     </NavigationContainer>
   );
