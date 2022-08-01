@@ -26,7 +26,7 @@ const CreateEmployee = (props) => {
   const [AdminId, setId] = useState("");
   const [Password, setPwd] = useState("");
   const [isChange, setChange] = useState(false);
-  const [checked, setChecked] = React.useState("first");
+  const [checked, setChecked] = React.useState("second");
 
   return (
     <View style={{ flex: 1 }}>
@@ -54,15 +54,15 @@ const CreateEmployee = (props) => {
               size={28}
               color={COLORS.sideDrawerIconClr}
             />
-            <Text style={{ fontSize: 16, paddingLeft: 10, paddingTop: 5 }}>
+            {/* <Text style={{ fontSize: 16, paddingLeft: 10, paddingTop: 5 }}>
               Create Employee
-            </Text>
+            </Text> */}
           </View>
         </View>
         <ScrollView style={{ marginBottom: 200 }}>
-          <View style={{ paddingHorizontal: 15 }}>
+          <View style={{ paddingHorizontal: 15, alignItems: "center" }}>
             <View style={{ flexDirection: "row", marginBottom: 10 }}>
-              <Text style={styles.inputBox}>Login By :</Text>
+              {/* <Text style={styles.inputBox}>Login By :</Text> */}
               <View style={styles.RadioBtnBox}>
                 <View style={styles.innerBox}>
                   <RadioButton
@@ -89,19 +89,19 @@ const CreateEmployee = (props) => {
               </View>
             </View>
             <View style={{ flexDirection: "row" }}>
-              <Text style={styles.inputBox}>
+              {/* <Text style={styles.inputBox}>
                 {checked === "second" ? "Employee Name" : "Name"}
-              </Text>
+              </Text> */}
               <TextInput
                 placeholderTextColor="grey"
                 style={styles.input}
-                placeholder="Name"
+                placeholder={checked === "second" ? "Employee Name" : "Name"}
                 value={AdminId}
                 onChangeText={setId}
               />
             </View>
             <View style={{ flexDirection: "row" }}>
-              <Text style={styles.inputBox}>Phone No :</Text>
+              {/* <Text style={styles.inputBox}>Phone No :</Text> */}
               <TextInput
                 placeholderTextColor="grey"
                 style={styles.input}
@@ -111,7 +111,7 @@ const CreateEmployee = (props) => {
               />
             </View>
             <View style={{ flexDirection: "row" }}>
-              <Text style={styles.inputBox}>Alternative Phone No :</Text>
+              {/* <Text style={styles.inputBox}>Alternative Phone No :</Text> */}
               <TextInput
                 placeholderTextColor="grey"
                 style={styles.input}
@@ -121,11 +121,11 @@ const CreateEmployee = (props) => {
               />
             </View>
             <View style={{ flexDirection: "row" }}>
-              <Text style={styles.inputBox}>Id No :</Text>
+              {/* <Text style={styles.inputBox}>Id No :</Text> */}
               <TextInput
                 placeholderTextColor="grey"
                 style={styles.input}
-                placeholder="Id No"
+                placeholder="Id Proof No"
                 value={Password}
                 onChangeText={setPwd}
               />

@@ -10,7 +10,7 @@ const Header = (props) => {
     <View style={styles.container}>
       <StatusBar StatusBarStyle="dark-content" />
       <View style={{ flex: 1 }}></View>
-      <View style={{ flex: 1.4 }} flexDirection="row">
+      <View style={{ flex: 1.4, paddingBottom: 10 }} flexDirection="row">
         <View
           style={{ flex: 1, alignItems: "center", justifyContent: "center" }}
         >
@@ -46,7 +46,7 @@ const Header = (props) => {
 
 const styles = StyleSheet.create({
   container: {
-    height: 100,
+    height: 50,
     backgroundColor: "#fff",
     // backgroundColor:"#D3D3D3",
     flexDirection: "column",

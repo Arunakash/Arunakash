@@ -91,9 +91,8 @@ const MyAccount = (props) => {
           </View>
         </View>
         <ScrollView style={{ marginBottom: 200 }}>
-          <View style={{ paddingHorizontal: 15 }}>
+          <View style={{ paddingHorizontal: 15, alignItems: "center" }}>
             <View style={{ flexDirection: "row" }}>
-              <Text style={styles.inputBox}>Admin Name :</Text>
               <TextInput
                 placeholderTextColor="grey"
                 style={styles.input}
@@ -104,7 +103,6 @@ const MyAccount = (props) => {
               />
             </View>
             <View style={{ flexDirection: "row" }}>
-              <Text style={styles.inputBox}>Company Name :</Text>
               <TextInput
                 placeholderTextColor="grey"
                 style={styles.input}
@@ -115,7 +113,6 @@ const MyAccount = (props) => {
               />
             </View>
             <View style={{ flexDirection: "row" }}>
-              <Text style={styles.inputBox}>GST/Registration No :</Text>
               <TextInput
                 placeholderTextColor="grey"
                 style={styles.input}
@@ -126,7 +123,6 @@ const MyAccount = (props) => {
               />
             </View>
             <View style={{ flexDirection: "row" }}>
-              <Text style={styles.inputBox}>Phone No :</Text>
               <TextInput
                 placeholderTextColor="grey"
                 style={styles.input}
@@ -136,7 +132,6 @@ const MyAccount = (props) => {
               />
             </View>
             <View style={{ flexDirection: "row" }}>
-              <Text style={styles.inputBox}>Email Id :</Text>
               <TextInput
                 placeholderTextColor="grey"
                 style={styles.input}
@@ -147,7 +142,6 @@ const MyAccount = (props) => {
               />
             </View>
             <View style={{ flexDirection: "row" }}>
-              <Text style={styles.inputBox}>UPI Id :</Text>
               <TextInput
                 placeholderTextColor="grey"
                 style={styles.input}
@@ -157,8 +151,18 @@ const MyAccount = (props) => {
                 onChangeText={setComName}
               />
             </View>
+
             <View style={{ flexDirection: "row" }}>
-              <Text style={styles.inputBox}>GST :</Text>
+              <TextInput
+                placeholderTextColor="grey"
+                style={styles.input}
+                placeholder="Address"
+                value={Address}
+                editable={isEdit}
+                onChangeText={setAddress}
+              />
+            </View>
+            <View style={{ flexDirection: "row" }}>
               <View style={styles.RadioBtnBox}>
                 <View style={styles.innerBox}>
                   <RadioButton
@@ -183,17 +187,6 @@ const MyAccount = (props) => {
                   </View>
                 </View>
               </View>
-            </View>
-            <View style={{ flexDirection: "row" }}>
-              <Text style={styles.inputBox}>Address</Text>
-              <TextInput
-                placeholderTextColor="grey"
-                style={styles.input}
-                placeholder="Address"
-                value={Address}
-                editable={isEdit}
-                onChangeText={setAddress}
-              />
             </View>
           </View>
         </ScrollView>

@@ -11,23 +11,54 @@ const ReportScrnsHeader = (props) => {
       <StatusBar StatusBarStyle="dark-content" />
       <View style={{ flex: 1 }}></View>
       <View style={{ flex: 1.4 }} flexDirection="row">
-        <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+        <View
+          style={{ flex: 1, alignItems: "center", justifyContent: "center" }}
+        >
           <View style={{ flexDirection: "row" }}>
-            <Ionicons name="menu" size={30} color="black" onPress={() =>{ props.navigation.dispatch(DrawerActions.openDrawer())}}/>
+            <Ionicons
+              name="menu"
+              size={30}
+              color="black"
+              onPress={() => {
+                props.navigation.dispatch(DrawerActions.openDrawer());
+              }}
+            />
           </View>
         </View>
-        <View style={{ flex: 4, alignItems: "center", justifyContent: "center" }}>
-           <Text style={{ fontSize: 17, fontWeight: "bold" }}>{props.name}</Text>
-          {props.label && props.countValue?
-              <View style={{flexDirection:'row',alignItems:'center',marginTop:10}}>
-              <Text style={{paddingRight:20}}>{props.label}</Text>
-              <View style={{width:50,height:24,alignItems:'center',justifyContent:'center',borderColor:COLORS.primary,borderWidth:2,borderRadius:10}}>
-                    <Text style={{color:"black"}}>{props.countValue}</Text>
+        <View
+          style={{ flex: 4, alignItems: "center", justifyContent: "center" }}
+        >
+          <Text style={{ fontSize: 17, fontWeight: "bold" }}>{props.name}</Text>
+          {props.label && props.countValue ? (
+            <View
+              style={{
+                flexDirection: "row",
+                alignItems: "center",
+                marginTop: 10,
+              }}
+            >
+              <Text style={{ paddingRight: 20 }}>{props.label}</Text>
+              <View
+                style={{
+                  width: 50,
+                  height: 24,
+                  alignItems: "center",
+                  justifyContent: "center",
+                  borderColor: COLORS.primary,
+                  borderWidth: 2,
+                  borderRadius: 10,
+                }}
+              >
+                <Text style={{ color: "black" }}>{props.countValue}</Text>
               </View>
-            </View>:<></>
-          }
+            </View>
+          ) : (
+            <></>
+          )}
         </View>
-        <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}></View>
+        <View
+          style={{ flex: 1, alignItems: "center", justifyContent: "center" }}
+        ></View>
       </View>
     </View>
   );
@@ -35,12 +66,11 @@ const ReportScrnsHeader = (props) => {
 
 const styles = StyleSheet.create({
   container: {
-    height: 125,
+    height: 50,
     backgroundColor: "#fff",
     // backgroundColor:"#D3D3D3",
     flexDirection: "column",
   },
-
 });
 
 export default ReportScrnsHeader;
